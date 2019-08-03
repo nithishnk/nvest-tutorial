@@ -57,8 +57,15 @@ background-image: url('back.png')
 @media only screen and (max-width: 763px)
 {
 .vd{
-    width: 320px !important;
-    height: 203px !important;
+    width: 600px !important;
+    height: 285px !important;
+}
+}
+@media only screen and (max-width: 535px)
+{
+.vd{
+    width: 300px !important;
+    height: 160px !important;
 }
 }
 @media only screen and (max-width: 763px)
