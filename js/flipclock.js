@@ -908,6 +908,7 @@ var FlipClock;
 			return this.time;		
 		},
 		
+		
 		/**
 		 * Changes the increment of time to up or down (add/sub)
 		 */
@@ -1524,7 +1525,6 @@ var FlipClock;
 			}
 
 			console.log(date);
-
 			
 			var hours = date.getHours();
 			var merid = hours > 12 ? 'PM' : 'AM';
@@ -1532,6 +1532,8 @@ var FlipClock;
 				hours > 12 ? hours - 12 : (hours === 0 ? 12 : hours),
 				date.getMinutes()			
 			];
+			
+			
 
 			if(showSeconds === true) {
 				data.push(date.getSeconds());
