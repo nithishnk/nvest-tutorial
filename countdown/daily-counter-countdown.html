@@ -4,54 +4,58 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<meta http-equiv="X-UA-Compatible" content="ie=edge">
 			<title>Make Money With BITCOIN</title>
+			<link rel="stylesheet" href="../css/test.css">
+  <link href="events.genndi.com/assets/css/register_button.css" rel="stylesheet">
+			<link rel="stylesheet" href="../css/countdown.css">
 			<link rel="icon" href="../logo/ico.png" type="image/icon type">
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="../css/flipclock.css">
-		<link href="events.genndi.com/assets/css/register_button.css" rel="stylesheet">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-		<script src="../js/flipclock.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<h1 class="d-flex justify-content-center mt-5">Make Money With the Bitcoin</h1>
-	<div class="clock d-flex justify-content-center mt-5" style="margin:2em;"></div>
+	<div class=" d-flex justify-content-center mt-5"><h1 class="clock digit" id="time">00:05:00</h1></div>
 	<div class="d-flex justify-content-center message"></div>
 					<div class="mt-5 mb-5 images-icon d-flex justify-content-center">
 							<img id="js-cal-icon" src="https://d1oca4s11y7nv0.cloudfront.net/shorupa_pirakas50/kQWPVjWgkNGZgfPMpnwV1566247828.png">
 						</div>
-						<h5 class="d-flex justify-content-center">Watch yesterday's replay now</h5>
-						<h5 class="d-flex justify-content-center">Wednesday, 21 August 2019, at 11:00 AM
-						<h5 class="d-flex justify-content-center">Monday, 26 August 2019, at 1:00 PM</h5>
-						<h5 class="d-flex justify-content-center">Monday, 02 September 2019, at 1:00 PM</h5>
-						<h5 class="d-flex justify-content-center">Mondy, 09 September 2019, at 1:00 PM</h5>
-						
-						</h5>
-						<div style="margin:auto;width:300px;"><div class="embedded-joinwebinar-button"><button type="button" class="btn btn-default css3button" title="regpopbox_818720503324742810_44699d0027"><span>Register now</span></button></div></div>
-</div>
-	<script type="text/javascript">
-	
-		var clock;
-		
-		$(document).ready(function() {
-			var clock;
-			
-			clock = $('.clock').FlipClock({
-		        clockFace: 'DailyCounter',
-		        autoStart: false,
-		        callbacks: {
-		        	stop: function() {
-		        		$('.message').html('Expired')
-		        	}
-		        }
-		    });
-				    
-		    clock.setTime(001100);
-		    clock.setCountdown(true);
-		    clock.start();
+						</div>
+<div style="margin:auto;width:300px;">
+		<div class="embedded-joinwebinar-button">
+			<button type="button" class="btn btn-default css3button" title="regpopbox_818720503324742810_a7e338b08c">
+				<span>Register now</span>
+			</button>
+		</div>
+	</div>
+	<img src="events.genndi.com/tracker?action=registration-evergreen&webicode=a7e338b08c&version=&memberid=818720503324742810" style="visibility:hidden; height:0px; width:0px; border:none;">
 
-		});
+	    
+
+	<script src="../js/test.js"></script>
+    
+<script type="text/javascript">
+	function startTimer(duration, display) {
+	var timer = duration, minutes, seconds;
+	setInterval(function () {
+			minutes = parseInt(timer / 60, 10);
+			seconds = parseInt(timer % 60, 10);
+
+			minutes = minutes < 10 ? "00:0" + minutes : minutes;
+			seconds = seconds < 10 ? "0" + seconds : seconds;
+
+			display.textContent = minutes + ":" + seconds;
+
+			if (--timer < 0) {
+					timer = duration;
+			}
+	}, 1000);
+}
+
+window.onload = function () {
+	var fiveMinutes = 60 * 5,
+			display = document.querySelector('#time');
+	startTimer(fiveMinutes, display);
+};
 	</script>
-	<script src="events.genndi.com/register.evergreen.extra.js" language="javascript" type="text/javascript" async></script>
+
 	</body>
 </html>

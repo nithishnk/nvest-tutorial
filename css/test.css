@@ -1,0 +1,7 @@
+button.css3button
+{background:#19acca;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  border:1px groove #0D92AD;font-family:Roboto,sans-serif;font-size:18px;line-height:130%;font-weight:300;color:#fff;padding:12px 5px;width:100%;white-space:normal;cursor:pointer; text-transform:uppercase;}button.css3button i{position:relative;right:0;bottom:4px;font-size:10px;padding-left:8px}button.css3button:focus,button.css3button:hover{background:#0D92AD;color:#fff;outline:0;border:1px ridge #0D92AD}
+.wj-hide{overflow-x: hidden !important;}.wj-hide body{overflow: hidden !important;}
