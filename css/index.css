@@ -1,6 +1,6 @@
 body
 {
-background-image: url('back.png')
+background-image: url('../images/back.png')
 }
 .head1
 { text-align: center;
