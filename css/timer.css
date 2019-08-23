@@ -5,9 +5,17 @@ body{
 .clr{
   color: whitesmoke;
 }
-p {
+.timer {
   text-align: center;
   font-size: 60px;
   margin-top: 0px;
   color: whitesmoke;
+}
+.date
+{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0px;
+  color: whitesmoke;
+  font-weight: 300;
 }
