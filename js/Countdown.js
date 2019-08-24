@@ -121,21 +121,28 @@ sethrtime();
 // countDownTimerSec();
 // countDownTimerMin();
 zeroshow();
+zeroshowsec();
 
 }
 
 window.onload=out_code();
 
 function zeroshow(){
-    if(mins < 10 || secp < 10){
+    if(mins < 10 ){
         document.getElementById("zerodis").innerHTML = 0;
-        document.getElementById("zerodissec").innerHTML = 0;
     }
     else{
 
     }
 }   
 zeroshow();
+
+function zeroshowsec(){
+    if(secs < 10){
+        document.getElementById("zerodissec").innerHTML = 0;
+    }
+}   
+zeroshowsec();
 
 
 countdown();
