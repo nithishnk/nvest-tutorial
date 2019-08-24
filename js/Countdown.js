@@ -131,9 +131,6 @@ function zeroshow(){
     if(mins < 10 ){
         document.getElementById("zerodis").innerHTML = 0;
     }
-    else{
-
-    }
 }   
 zeroshow();
 
