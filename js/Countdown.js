@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html>
-<body>
-<p><span id="demohr"></span> : <span id="demomin"></span></p>
-<p id="demotimercounthtml"></p>
-<div id="timer">
-<span id="minutes"></span> : <span id="seconds"></span>
-</div>
-
-
-<script>
 var d = new Date();
 var n = d.getMinutes();
 var h = d.getHours();
 var td = d.getDate();
 var aj = d.getSeconds()
+
+document.getElementById("todaydate").innerHTML = d.getDate();
 
 function setmintime(){
 let minout
@@ -129,15 +120,22 @@ setmintime();
 sethrtime();
 // countDownTimerSec();
 // countDownTimerMin();
-// zeroshow();
+zeroshow();
+
 }
+
 window.onload=out_code();
 
-</script>
+function zeroshow(){
+    if(mins < 10 || secp < 10){
+        document.getElementById("zerodis").innerHTML = 0;
+        document.getElementById("zerodissec").innerHTML = 0;
+    }
+    else{
 
-<script>
+    }
+}   
+zeroshow();
+
+
 countdown();
-</script>
-
-</body>
-</html>

@@ -1,5 +1,3 @@
-// document.getElementById("demotimercount").innerHTML = `${h % 12 - pa}` + " : " + `${nk - n}` + " : " + `${60 - aj}`;
-
 var d = new Date();
 var n = d.getMinutes();
 var h = d.getHours();
@@ -68,7 +66,64 @@ console.log("hour",`${h % 12 - pa}` + `${nk - n}` + `${60 - aj}`)
 }
 countDownTimer();
 
+var minp = nk - n;
+var secp = 60 - aj;
+// var uptocount = minp + secp
 
 
+function countDownTimerSec(){
+    setInterval(function(){ 
+    if(secp<0){
+        document.getElementById("demotimercountsec").innerHTML = 60 + secp--;
+    }
+    else{
+    document.getElementById("demotimercountsec").innerHTML = secp--;
+    }
+ }, 1000);
+}
+
+document.getElementById("demotimercountmin").innerHTML = minp;
+function countDownTimerMin(){
+    setInterval(function(){ 
+                if(secp==0){
+            document.getElementById("demotimercountmin").innerHTML = minp--;
+        }
+        else{
+            document.getElementById("demotimercountmin").innerHTML = minp;
+        }
+ }, 1000);
+}
+
+function out_code(){
+    setmintime(); 
+    sethrtime();
+    countDownTimerSec();
+    countDownTimerMin();
+}
+window.onload=out_code();
+
+function zeroshow(){
+        if(minp<10){
+            document.getElementById("zerodis").innerHTML = 0;
+        }
+        else{
+    
+        }
+    }   
+    zeroshow();
+
+    function zeroshowsec(){
+        if(secp<10){
+            document.getElementById("zerodissec").innerHTML = 0;
+        }
+        else{
+    
+        }
+    }   
+    zeroshowsec();
+
+setTimeout(function(){
+           window.location.reload(1);
+        }, 90000);
 
 

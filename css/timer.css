@@ -19,3 +19,11 @@ body{
   color: whitesmoke;
   font-weight: 300;
 }
+.hide
+{
+  display: none;
+}
+.count-down
+{
+  border: 3px outset #1C6EA4;
+}
