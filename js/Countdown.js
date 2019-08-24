@@ -93,7 +93,7 @@ seconds.innerHTML = secs;
 }
 else if(mins<=0 && secs<=0){
 minutes.innerHTML = 0
-seconds.innerHTML = 0
+seconds.innerHTML = "00"
 }
 else {
 minutes.innerHTML = getminutes();
