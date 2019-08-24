@@ -121,7 +121,7 @@ sethrtime();
 // countDownTimerSec();
 // countDownTimerMin();
 zeroshow();
-zeroshowsec();
+// zeroshowsec();
 
 }
 
