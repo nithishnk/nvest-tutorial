@@ -2,51 +2,100 @@ var d = new Date();
 var n = d.getMinutes();
 var h = d.getHours();
 var td = d.getDate();
-var aj = d.getSeconds()
+var aj = d.getSeconds();
+var mont = d.getMonth();
 
 document.getElementById("todaydate").innerHTML = d.getDate();
 
+function myYear() {
+    var yr = d.getFullYear();
+    document.getElementById("year").innerHTML = yr;
+}
+myYear();
+
+function myMonth() {
+    var month = new Array();
+    month[0] = "January";
+    month[1] = "February";
+    month[2] = "March";
+    month[3] = "April";
+    month[4] = "May";
+    month[5] = "June";
+    month[6] = "July";
+    month[7] = "August";
+    month[8] = "September";
+    month[9] = "October";
+    month[10] = "November";
+    month[11] = "December";
+    var r = month[d.getMonth()];
+    document.getElementById("myId").innerHTML = r;
+}
+myMonth();
+
+function myDate() {
+    var a = new Date();
+    var days = new Array(7);
+    days[0] = "Sunday";
+    days[1] = "Monday";
+    days[2] = "Tuesday";
+    days[3] = "Wednesday";
+    days[4] = "Thursday";
+    days[5] = "Friday";
+    days[6] = "Saturday";
+    var r = days[a.getDay()];
+    document.getElementById("week").innerHTML = r;
+}
+myDate();
+
 function setmintime(){
 let minout
-if(n>=0 && n<15){
-document.getElementById("demomin").innerHTML = 15;
-minout = 15;
-}
-else if(n>=15 && n<30){
-document.getElementById("demomin").innerHTML = 30;
-minout = 30;
-}
-else if(n>=30 && n<45){
-document.getElementById("demomin").innerHTML = 45;
-minout = 45;
-}
-else if(n>=45 && n<=59){
-document.getElementById("demomin").innerHTML = "00";
-minout = 60;
-}
-else{
-document.getElementById("demomin").innerHTML = 0;
-minout = 0;
-}
-return minout;
+    if(n>=0 && n<15)
+    {
+        document.getElementById("demomin").innerHTML = 15;
+        minout = 15;
+    }
+    else if(n>=15 && n<30)
+    {
+        document.getElementById("demomin").innerHTML = 30;
+        minout = 30;
+    }
+    else if(n>=30 && n<45)
+    {
+        document.getElementById("demomin").innerHTML = 45;
+        minout = 45;
+    }
+    else if(n>=45 && n<=59)
+    {
+        document.getElementById("demomin").innerHTML = "00";
+        minout = 60;
+    }
+    else
+    {
+        document.getElementById("demomin").innerHTML = 0;
+        minout = 0;
+    }
+    return minout;
 }
 
 
 function sethrtime(){
 let hrout
-if(n>=45 && h!=12){
-document.getElementById("demohr").innerHTML = h + 1;
-hrout = h % 12 + 1 || h + 1;
-}
-else if(h==12){
-document.getElementById("demohr").innerHTML = "1";
-hrout = "1";
-}
-else {
-document.getElementById("demohr").innerHTML = h;
-hrout = h % 12 || 12;
-}
-return hrout;
+    if(n>=45 && h!=12) 
+    {
+        document.getElementById("demohr").innerHTML = h++;
+        hrout = h % 12 + 1 || h + 1;
+    }
+    else if(h==12 && n>=45)
+    {
+        document.getElementById("demohr").innerHTML = 1;
+        hrout = 1;
+    }
+    else 
+    {
+        document.getElementById("demohr").innerHTML = h;
+        hrout = h % 12 || 12;
+    }
+    return hrout;
 }
 
 
