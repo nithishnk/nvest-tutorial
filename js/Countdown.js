@@ -82,7 +82,7 @@ function sethrtime(){
 let hrout
     if(n>=45 && h!=12) 
     {
-        document.getElementById("demohr").innerHTML = h++;
+        document.getElementById("demohr").innerHTML = h % 12 + 1 || h + 1;
         hrout = h % 12 + 1 || h + 1;
     }
     else if(h==12 && n>=45)
@@ -92,7 +92,7 @@ let hrout
     }
     else 
     {
-        document.getElementById("demohr").innerHTML = h;
+        document.getElementById("demohr").innerHTML = h % 12 || 12;
         hrout = h % 12 || 12;
     }
     return hrout;
