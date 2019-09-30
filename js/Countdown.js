@@ -5,6 +5,7 @@ var td = d.getDate();
 var aj = d.getSeconds();
 var mont = d.getMonth();
 
+
 document.getElementById("todaydate").innerHTML = d.getDate();
 
 function myYear() {
@@ -177,7 +178,7 @@ zeroshow();
 window.onload=out_code();
 
 function zeroshow(){
-    if(mins < 10 ){
+    if(mins <= 10 ){
         document.getElementById("zerodis").innerHTML = 0;
     }
 }   
@@ -192,3 +193,23 @@ zeroshowsec();
 
 
 countdown();
+
+
+// function addDays(dateObj, numDays) {
+//   return dateObj.setDate(dateObj.getDate() + numDays);
+// }
+// function addDays(dateObj, numDays) {
+//    dateObj.setDate(dateObj.getDate() + numDays);
+//    return dateObj;
+// }
+
+// var now = new Date();
+// var tomorrow = addDays(new Date(), 1);
+// var nextWeek = addDays(new Date(), 7);
+
+
+// document.getElementById("addseven").innerHTML = nextWeek ;
+var zz = new Date();
+//add a day to the date
+zz.setDate(zz.getDate() + 1);
+document.getElementById("tomdate").innerHTML = zz;
